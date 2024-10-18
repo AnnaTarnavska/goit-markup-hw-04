@@ -154,6 +154,7 @@ a {
     margin: 0 auto;
     margin-top: 48px;
     border: none;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -197,6 +198,19 @@ img {
     gap: 24px;
 
 }
+
+.icon-st {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+}
+
+.icon {}
 
 .feature-item {
     width: calc((100% - 72px) / 4);
@@ -273,6 +287,34 @@ img {
     text-align: center;
 }
 
+.social-icon-st {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: auto;
+    margin-left: 16px;
+}
+
+.social-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #4D5AE5;
+
+}
+
+.social-icon-box:hover {
+    background-color: #404BBF;
+}
+
+.social {
+    fill: #F4F4FD;
+}
+
 .secttion-portfolio {
     text-transform: capitalize;
     display: flex;
@@ -293,6 +335,32 @@ img {
 
 .product-info {
     width: calc((100% - 48px) / 3);
+    position: relative;
+}
+
+.product-info:hover .product-info-cover {
+    transform: translateY(0);
+}
+
+.product-info-wrapper {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-info-cover {
+    position: absolute;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    font-size: 16px;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+
 }
 
 .app-info {
@@ -341,4 +409,11 @@ img {
 
 .footer-p {
     max-width: 264px;
+}
+
+.social-icon-footer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
 }
